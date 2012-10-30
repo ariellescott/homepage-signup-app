@@ -54,3 +54,6 @@ gem "stripe", ">= 1.7.4"
 gem "stripe_event", ">= 0.4.0"
 gem "quiet_assets", ">= 1.0.1", :group => :development
 gem "hub", ">= 1.10.2", :group => [:development], :require => nil
+gem "hominid"
+gem "google_visualr", ">= 2.1.2"
+gem "jquery-datatables-rails", ">= 1.10.0"
