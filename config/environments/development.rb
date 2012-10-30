@@ -9,7 +9,18 @@ HomepageSignupApp::Application.configure do
   config.action_mailer.perform_deliveries = false
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default :charset => "utf-8"
-  
+
+
+  # change mail delivery to either :smtp, :sendmail, :file, :test
+  config.action_mailer.smtp_settings = {
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: "the.com",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: "email@storyofdice.com",
+  password: "te5tte5t"
+}
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
