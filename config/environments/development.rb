@@ -15,7 +15,7 @@ HomepageSignupApp::Application.configure do
   config.action_mailer.smtp_settings = {
   address: "smtp.gmail.com",
   port: 587,
-  domain: "the.com",
+  domain: "homepage-signup-app.herokuapp.com",
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: "email@storyofdice.com",

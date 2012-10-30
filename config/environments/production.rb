@@ -8,7 +8,18 @@ HomepageSignupApp::Application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default :charset => "utf-8"
-  
+
+  # change mail delivery to either :smtp, :sendmail, :file, :test
+  config.action_mailer.smtp_settings = {
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: "homepage-signup-app.herokuapp.com",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: "email@storyofdice.com",
+  password: "te5tte5t"
+}
+
   # Code is not reloaded between requests
   config.cache_classes = true
 
