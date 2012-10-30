@@ -1,1 +1,1 @@
-This is a test app that collects email addresses then redirects to URL. 
+This is a test application for taking email addresses and redirecting a user to a website.
